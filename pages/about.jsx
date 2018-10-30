@@ -1,8 +1,7 @@
-import Link from 'next/link';
+import Layout from '../comps/Layout';
 
 export default () => (
-    <div>
-        <Link href="/index">Index</Link>
+    <Layout>
         <p>About page.</p>
-    </div>
+    </Layout>
 );
