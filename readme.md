@@ -9,3 +9,5 @@
 - If you need to style `next/link`, you need to do it to the underlying component.
 - The only requirement for components placed inside a Link is they should accept an `onClick` prop.
 - We can create a page by exporting a React component, and putting that component inside the `pages` directory. Так можно дебажить отдельные компоненты.
+- HOC `withRouter` from "next/router" will inject the Next.js router as a property.
+- In the `<Link>` element, we have used another prop called `as`. That's the URL which we need to show on the browser. The URL your app sees is mentioned in the `href` prop.
