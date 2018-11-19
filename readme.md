@@ -13,7 +13,7 @@
 - In the `<Link>` element, we have used another prop called `as`. That's the URL which we need to show on the browser. The URL your app sees is mentioned in the `href` prop. Но лучше это не юзать. Т.к. это трэшь, когда в браузере показывается один URL, а внутри приложения используется совсем лругой URL.
 - Next.js comes with a standard API to fetch data for pages. We do it using an async function called `getInitialProps`.  We can write our `getInitialProps` to work on both server and the client.
 - First of all we need to install `isomorphic-unfetch`. Возможно `axios` лучше?
--
+- The best way to deploy your web app is as a static HTML app, if that's possible. With a static app, you can use a fast and efficient web server like `NGINX`.
 
 # TODO
 - Настроить TS.
