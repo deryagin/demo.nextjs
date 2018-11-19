@@ -1,14 +1,14 @@
-import Layout from '../comps/Layout';
 import Link from 'next/link';
 import fetch from 'isomorphic-unfetch';
+import Layout from '../../comps/Layout';
 
-const Shows = () => (
+const Shows = (props) => (
     <Layout>
         <h1>Batman TV Shows</h1>
         <ul>
             {props.shows.map(({ show }) => (
                 <li key={show.id}>
-                    <Link as={`/post/${show.id}`} href={`/post?id=${show.id}`}>
+                    <Link as={`/posts/${show.id}`} href={`/posts?id=${show.id}`}>
                         <a>{show.name}</a>
                     </Link>
                 </li>
@@ -26,3 +26,4 @@ Shows.getInitialProps = async () => {
     };
 }
 
+export default Shows;
